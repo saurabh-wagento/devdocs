@@ -903,7 +903,7 @@ You can find Magento Shipping-specific release notes in [Magento Shipping Releas
 
 <!--- MAGETWO-83815 -->* The PHP notice that Magento displays when an invalid `ui_component` configuration is used has been improved. *Fix submitted by [Vova Yatsyuk](https://github.com/vovayatsyuk) in pull request 12239*.
 
-<!--- MAGETWO-83293 -->* Magento has added verification for previously set filters in `Magento/Ui/Component/Filters`, which has eliminated duplication of filters in the collection `where` conditions.
+<!--- MAGETWO-83293 -->* Magento has added verification for previously set filters in `Magento/Ui/Component/Filters`, which has eliminated duplication of filters in collection `where` conditions.
 
 <!--- MAGETWO-87994 -->* Inconsistency in the animation of the Admin spinner progress indicator has been corrected. *Fix submitted by [Neill Robson](https://github.com/RNanoware) in pull request 13700*.
 
