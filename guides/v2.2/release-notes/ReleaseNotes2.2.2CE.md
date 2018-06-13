@@ -46,7 +46,7 @@ Looking for more information on these new features as well as many others? Check
 
 ## Fixes and enhancements
 
-* **Significant enhancements for payment methods**. We've added support for the Indian Rupee (INR) to PayPal Express Checkout. We've also added  a fix for an issue where some Braintree refunds did not work.
+* **Significant enhancements to payment methods**. We've added support for the Indian Rupee (INR) to PayPal Express Checkout. We've also added  a fix for an issue where some Braintree refunds did not work.
 
 * **Improvements to multi-storeview sites**. Switching store views multiple times no longer results in an error on the storefront.
 
@@ -96,7 +96,7 @@ Looking for more information on these new features as well as many others? Check
 ### Catalog
 <!--- MAGETWO-83498 -->* You can now enter strings that exceed 255 characters in Admin or frontend input fields. Previously, Magento  saved only the first 255 characters of a long input string. [GitHub-6238](https://github.com/magento/magento2/issues/6238)
 
-<!--- MAGETWO-83477 -->* Magento now renders color attribute swatches correctly for the search result page if sorting for color attribute is enabled.  *Fix submitted by [Roman K.](https://github.com/RomaKis) in pull request 12077*. [GitHub-10628](https://github.com/magento/magento2/issues/10628)
+<!--- MAGETWO-83477 -->* Magento now renders color attribute swatches correctly for the search result page if sorting for a color attribute is enabled.  *Fix submitted by [Roman K.](https://github.com/RomaKis) in pull request 12077*. [GitHub-10628](https://github.com/magento/magento2/issues/10628)
 
 <!--- MAGETWO-83174, 83169 -->* The `\Magento\Quote\Model\ResourceModel\Quote\Item\Collection` now returns items that have only existing relations in the `catalog_product_entity` table. Previously, Magento loaded quote items with non-existing products.
 
@@ -128,7 +128,7 @@ Looking for more information on these new features as well as many others? Check
 
 
 ### Cart and checkout
-<!--- MAGETWO-81665 -->* The default shipping-save-processor now has a payload extender. This feature allows third party extensions to modify the payload for the shipping address selection process. As a result, developers can now add `extension_attributes` while minimizing potential extension conflicts. *Fix submitted by [Navarr Barnier](https://github.com/navarr) in pull request 11249*.
+<!--- MAGETWO-81665 -->* The default shipping-save-processor now has a payload extender. This feature allows third-party extensions to modify the payload for the shipping address selection process. As a result, developers can now add `extension_attributes` while minimizing potential extension conflicts. *Fix submitted by [Navarr Barnier](https://github.com/navarr) in pull request 11249*.
 
 
 <!--- MAGETWO-83476 -->* You can now view the **Products in cart** report if the cart contains a bundle or a grouped product. Previously, when you viewed the Products in Cart report, Magento threw an exception under these conditions. [GitHub-12079](https://github.com/magento/magento2/issues/12079)
@@ -179,7 +179,7 @@ Looking for more information on these new features as well as many others? Check
 
 <!--- MAGETWO-82236 -->* `app:config:dump` no longer adds an extra space to multiline array values. *Fix submitted by [@adrian-martinez-interactiv4](https://github.com/adrian-martinez-interactiv4) in pull request 11439*. [GitHub-11328](https://github.com/magento/magento2/issues/11328)
 
-<!--- MAGETWO-82665 -->* The TRAVIS_BRANCH variable is now surrounded by double-quotes instead of single-quotes . *Fix submitted by [@adrian-martinez-interactiv4](https://github.com/adrian-martinez-interactiv4) in pull request 11704*.
+<!--- MAGETWO-82665 -->* The TRAVIS_BRANCH variable is now surrounded by double-quotes instead of single-quotes. *Fix submitted by [@adrian-martinez-interactiv4](https://github.com/adrian-martinez-interactiv4) in pull request 11704*.
 
 
 <!--- MAGETWO-83035 -->* The doc block of `setValue` in FilterBuilder now reflects that the `setValue` method will accept an array. *Fix submitted by [bytecreation](https://github.com/ByteCreation) in pull request 11854*.
@@ -250,7 +250,7 @@ Looking for more information on these new features as well as many others? Check
 
 <!--- MAGETWO-82645 -->* Customer Groups are now located in the Magento Admin under **Customers > Customer Groups**. *Fix submitted by [Mr. Lewis](https://github.com/lewisvoncken) in pull request 11677*.
 
-<!--- MAGETWO-82810 -->* Magento now wraps long label text by word instead of letter. *Fix submitted by [@enriquei4](https://github.com/enriquei4) in pull request 11745*. [GitHub-7099](https://github.com/magento/magento2/issues/7099), [GitHub-711727](https://github.com/magento/magento2/issues/11727)
+<!--- MAGETWO-82810 -->* Magento now wraps long label text by word instead of a letter. *Fix submitted by [@enriquei4](https://github.com/enriquei4) in pull request 11745*. [GitHub-7099](https://github.com/magento/magento2/issues/7099), [GitHub-711727](https://github.com/magento/magento2/issues/11727)
 
 <!--- MAGETWO-81580 -->* Magento now displays and expects the format of birth years to match `yyyy` instead of `yy`. *Fix submitted by [Manu Gonzalez Rodriguez](https://github.com/manuelson) in pull request 11351*. [GitHub-11332](https://github.com/magento/magento2/issues/11332)
 
@@ -300,20 +300,20 @@ Looking for more information on these new features as well as many others? Check
 
 <!--- MAGETWO-81594 -->*  Exception message was passed as a exception description argument instead of exception message. *Fix submitted by [Tim Bezhashvyly](https://github.com/tim-bezhashvyly) in pull request 11363*. [GitHub-6924](https://github.com/magento/magento2/issues/6924)
 
-<!--- MAGETWO-83310 -->* Importing an import file to update customer data no loner results in the `entity fields` being removed if the columns were not present on the imported file. *Fix submitted by [Juan Alonso](https://github.com/jalogut) in pull request 11968*.
+<!--- MAGETWO-83310 -->* Importing an import file to update customer data no longer results in the `entity fields` being removed if the columns were not present on the imported file. *Fix submitted by [Juan Alonso](https://github.com/jalogut) in pull request 11968*.
 
 
 ### Indexing
 <!--- MAGETWO-80188 -->* Magento no longer re-indexes entities if they are unchanged, which improves the performance of the refresh index cron job without any loss of functionality. [GitHub-4893](https://github.com/magento/magento2/issues/4893)
 
-<!--- MAGETWO-80644 -->*  Magento now correctly resets status to `StateInterface::STATUS_INVALID` if a fatal PHP error occurs during indexing. *Fix submitted by [Lars Roettig](https://github.com/larsroettig) in pull request 11183*. [GitHub-11166](https://github.com/magento/magento2/issues/11166)
+<!--- MAGETWO-80644 -->*  Magento now correctly resets the status to `StateInterface::STATUS_INVALID` if a fatal PHP error occurs during indexing. *Fix submitted by [Lars Roettig](https://github.com/larsroettig) in pull request 11183*. [GitHub-11166](https://github.com/magento/magento2/issues/11166)
 
 
 
 ### Infrastructure
 <!--- MAGETWO-82273 -->* New static block tests  now detect blocks without a name attribute. We've also added a missing block name to allow block customization, and added a name for the order items grid default renderer block. *Fix submitted by [Ihor Sviziev](https://github.com/ihor-sviziev) in pull request 11235*. [GitHub-10824](https://github.com/magento/magento2/issues/10824)
 
-<!--- MAGETWO-82300 -->* We've ported a fix for the Travis CI builds for the  `2.2-develop` branch to the  `2.3-develop` branch. *Fix submitted by [Ievgen Shakhsuvarov](https://github.com/ishakhsuvarov) in pull request 11555*.
+<!--- MAGETWO-82300 -->* We've posted a fix for the Travis CI builds for the  `2.2-develop` branch to the  `2.3-develop` branch. *Fix submitted by [Ievgen Shakhsuvarov](https://github.com/ishakhsuvarov) in pull request 11555*.
 
 <!--- MAGETWO-82003 -->*  Integration tests now reset the integration test database when `TESTS_CLEANUP` is set to enabled. *Fix submitted by [Joshua Warren](https://github.com/joshuaswarren) in pull request 11499*. [GitHub-10025](https://github.com/magento/magento2/issues/10025)
 
@@ -362,7 +362,7 @@ Looking for more information on these new features as well as many others? Check
 
 <!--- MAGETWO-71966 -->* Braintree online refunds now work when you are using two Braintree accounts on two separate websites. Previously, when using two Braintree accounts for two separate websites, Magento did not process the refund, and displayed this message: **Sorry, but something went wrong**.
 
-<!--- MAGETWO-83270 -->* Administrators with limited privileges can now log in without errors. Previously, Magento threw an error, but did not log errors in either the server or Magento logs. [GitHub-11700](https://github.com/magento/magento2/issues/11700)
+<!--- MAGETWO-83270 -->* Administrators with limited privileges can now log in without errors. Previously, Magento threw an error but did not log errors in either the server or Magento logs. [GitHub-11700](https://github.com/magento/magento2/issues/11700)
 
 <!--- MAGETWO-82367 -->* Corrected a typo in a translatable string. *Fix submitted by [Danny Verkade - Cream](https://github.com/dverkade) in pull request 11569*.
 
@@ -401,7 +401,7 @@ can find Magento Shipping-specific release notes in [Magento Shipping Release No
 
 <!--- MAGETWO-83278 -->* Magento now displays by default of two shipping address lines even when the `street_lines` setting in customer configuration is set to 0 (zero). [GitHub-7995](https://github.com/magento/magento2/issues/7995)
 
-<!--- MAGETWO-83272 -->* Magent no longer displays a blank page at the shipping stage of checkout when the user tries to return to the Shipping page from the Payments page by clicking **Back**. [GitHub-11197](https://github.com/magento/magento2/issues/11197)
+<!--- MAGETWO-83272 -->* Magento no longer displays a blank page at the shipping stage of checkout when the user tries to return to the Shipping page from the Payments page by clicking **Back**. [GitHub-11197](https://github.com/magento/magento2/issues/11197)
 
 <!--- MAGETWO-83197 -->* The Shipping report available from the Admin now uses the correct currency code. [GitHub-11793](https://github.com/magento/magento2/issues/11793)
 
